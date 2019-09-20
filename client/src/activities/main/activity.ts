@@ -1,0 +1,11 @@
+import { PageViewActivity } from "typescene";
+import view from "./view";
+
+export default class MainActivity extends PageViewActivity.with(view) {
+  path = "/";
+
+  async onManagedStateActiveAsync() {
+    await super.onManagedStateActiveAsync();
+    console.log("MainActivity is now active");
+  }
+}
