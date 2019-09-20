@@ -1,4 +1,4 @@
-# Welcome to full-stack-typescene 👋
+# full-stack-typescene
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/dj0nny/full-stack-typescene#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/dj0nny/full-stack-typescene/graphs/commit-activity)
@@ -6,17 +6,39 @@
 
 > Full stack app built with Typescene
 
-## Install
+### 🚀 Getting started
 
-```sh
+### Download
+
+Clone the repository using **Git**:
+
+```bash
+git clone https://github.com/dj0nny/full-stack-typescene.git
+```
+
+Or download [here](https://github.com/dj0nny/full-stack-typescene/archive/develop.zip).
+
+### Install
+
+For installing the dependencies run:
+
+```bash
+cd full-stack-typescene
 npm install
+# OR
+yarn install
+```
+### Usage
+
+For running the app:
+
+```
+npm run dev
+# OR
+yarn dev
 ```
 
-## Run tests
-
-```sh
-npm run test
-```
+...more scripts
 
 ## Author
 
