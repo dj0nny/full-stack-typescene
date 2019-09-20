@@ -27,18 +27,38 @@ cd full-stack-typescene
 npm install
 # OR
 yarn install
+
+# Install client's dependencies
+npm run install:client
+# OR
+yarn install:client
 ```
 ### Usage
 
 For running the app:
 
-```
-npm run dev
+```bash
+# concurrently run the client and the server
+npm run dev 
 # OR
 yarn dev
+
+# run the server only
+npm run start:server
+# OR
+yarn start:server
+
+# run the server in development mode
+npm run dev:server
+# OR
+yarn dev:server
+
+# run the client only
+npm run start:client
+# OR
+yarn start:client
 ```
 
-...more scripts
 
 ## Author
 
