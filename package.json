@@ -1,0 +1,34 @@
+{
+  "name": "full-stack-typescene",
+  "version": "1.0.0",
+  "description": "Full stack app built with Typescene",
+  "main": "src/app.js",
+  "scripts": {
+    "start:server": "node src/app.js",
+    "dev:server": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dj0nny/full-stack-typescene.git"
+  },
+  "keywords": [
+    "typescene",
+    "full-stack",
+    "full-stack-app"
+  ],
+  "author": "dj0nny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dj0nny/full-stack-typescene/issues"
+  },
+  "homepage": "https://github.com/dj0nny/full-stack-typescene#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1",
+    "nodemon": "^1.19.2"
+  }
+}
