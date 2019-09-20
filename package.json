@@ -5,7 +5,9 @@
   "main": "src/app.js",
   "scripts": {
     "start:server": "node src/app.js",
-    "dev:server": "nodemon src/app.js"
+    "start:client": "cd client && npm run start",
+    "dev:server": "nodemon src/app.js",
+    "dev": "concurrently \"npm run dev:server\" \"npm run start:client\""
   },
   "repository": {
     "type": "git",
