@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 
 require('dotenv').config();
 
+const movie = require('./routes/movie');
+
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -26,6 +28,8 @@ app.use(cors());
 app.get('/', (req, res) => {
   res.status(200).json({ status: 200 });
 });
+
+app.use('/movie', movie);
 
 app.listen(port, () => {
   console.log(`Server is up at http://localhost:${port}`);
