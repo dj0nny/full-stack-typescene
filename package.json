@@ -8,7 +8,9 @@
     "start:client": "cd client && npm run start",
     "dev:server": "nodemon src/app.js",
     "dev": "concurrently \"npm run dev:server\" \"npm run start:client\"",
-    "install:client": "cd client && npm install"
+    "install:client": "cd client && npm install",
+    "build:client": "cd client && npm run build",
+    "start": "npm run build:client && npm run start:server"
   },
   "repository": {
     "type": "git",

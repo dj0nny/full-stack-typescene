@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const path = require('path');
 
 require('dotenv').config();
 
@@ -12,6 +13,8 @@ const port = process.env.PORT || 5000;
 
 mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@ds263127.mlab.com:63127/${process.env.DB_NAME}`);
 const db = mongoose.connection;
+
+app.use(express.static(path.join('client/dist')));
 
 db.once('open', () => {
   console.log('Connected...');
