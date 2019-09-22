@@ -93,14 +93,21 @@ yarn start
 * [ ] Update a movie
 * [ ] Build the project
 
-
-
 ## Author
 
 👤 **Francesco Giambruno**
 
 * Twitter: [@Dj0nny96](https://twitter.com/Dj0nny96)
 * Github: [@dj0nny](https://github.com/dj0nny)
+
+## Built with ❤️ using:
+
+### Backend:
+
+* [Node.js](https://nodejs.org/en/) - JavaScript runtime built on Chrome's V8 JavaScript engine
+* [Express.js](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
+* [MongoDB](https://github.com/u3u/vue-hooks) - NoSQL DBMS
+* [Typescene](https://typescene.dev) - Robust front end framework made with TypeScript: strongly typed, no dependencies, no nonsense.
 
 ## 🤝 Contributing
 
