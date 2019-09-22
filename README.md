@@ -57,7 +57,38 @@ yarn dev:server
 npm run start:client
 # OR
 yarn start:client
+
+# build the client
+npm run build
+# OR
+yarn build
+
+# run the built client and the Express server
+npm run start
+# OR
+yarn start
 ```
+
+## ✔️ Todo
+
+* [x] Create the repository
+* [x] Create the Express app
+* [x] Add middleware and routes
+* [x] Add Mongoose model
+* [ ] CRUD functionalities:
+  - [ ] Create
+  - [x] Read
+  - [ ] Update
+  - [ ] Delete
+* [x] Generate the Typescene app via `create-typescene-webapp`
+* [x] Add **remote service** for low level API calls
+* [x] Add **movie service**
+* [x] Display the data
+* [ ] Add a movie
+* [ ] Delete a movie
+* [ ] Update a movie
+* [ ] Build the project
+
 
 
 ## Author
