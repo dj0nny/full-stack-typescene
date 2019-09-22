@@ -1,8 +1,12 @@
 import { BrowserApplication } from "@typescene/webapp";
 import MainActivity from "./activities/main/activity";
 
+import RemoteService from './services/Remote';
+
 // ... register services here
 // new MyService().register();
+
+new RemoteService().register();
 
 const app = BrowserApplication.run(
   MainActivity,
