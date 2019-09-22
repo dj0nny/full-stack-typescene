@@ -1,4 +1,7 @@
 # full-stack-typescene
+
+[![npm version](https://badge.fury.io/js/typescene.svg)](https://badge.fury.io/js/typescene)
+![GitHub top language](https://img.shields.io/github/languages/top/dj0nny/full-stack-typescene)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/dj0nny/full-stack-typescene#readme)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/dj0nny/full-stack-typescene/graphs/commit-activity)
