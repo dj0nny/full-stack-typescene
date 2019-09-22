@@ -1,5 +1,6 @@
 # full-stack-typescene
 
+[![Build Status](https://travis-ci.org/dj0nny/full-stack-typescene.svg?branch=develop)](https://travis-ci.org/dj0nny/full-stack-typescene)
 [![npm version](https://badge.fury.io/js/typescene.svg)](https://badge.fury.io/js/typescene)
 ![GitHub top language](https://img.shields.io/github/languages/top/dj0nny/full-stack-typescene)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
