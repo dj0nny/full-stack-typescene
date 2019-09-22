@@ -10,7 +10,7 @@ branches:
   - develop
 
 install:
-  - npm run install
+  - npm install
 
 script:
   - npm run build
