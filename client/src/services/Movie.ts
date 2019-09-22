@@ -22,11 +22,9 @@ export default class MovieService extends ManagedService {
 
     async getMoviesAsync() {
       let result = await this.remote!.getAsync("movie");
-      let movies: Movie[] = result;
+      let movies: [] = result;
       movies.map(movie => {
         this.movieList.add(new MovieItem(movie));
       });
-
-      return this.movieList;
     }    
 }
