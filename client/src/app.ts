@@ -1,5 +1,6 @@
 import { BrowserApplication } from "@typescene/webapp";
 import MainActivity from "./activities/main/activity";
+import AddMovieActivity from "./activities/addMovie/activity";
 
 import RemoteService from './services/Remote';
 import MovieService from './services/Movie';
@@ -12,6 +13,7 @@ new MovieService().register();
 
 const app = BrowserApplication.run(
   MainActivity,
+  AddMovieActivity,
   // ... add activities here
 );
 
