@@ -80,10 +80,10 @@ yarn start
 * [x] Add middleware and routes
 * [x] Add Mongoose model
 * [ ] CRUD functionalities:
-  - [ ] Create
+  - [x] Create
   - [x] Read
   - [ ] Update
-  - [ ] Delete
+  - [x] Delete
 * [x] Generate the Typescene app via `create-typescene-webapp`
 * [x] Add **remote service** for low level API calls
 * [x] Add **movie service**
