@@ -29,4 +29,19 @@ router.post('/add', (req, res) => {
   });
 });
 
+router.delete('/:id', (req, res) => {
+  if (!req.params.id) {
+    res.status(500).json({ message: "No ID found" })
+  }
+  const movieId = { _id: req.params.id };
+
+  Movie.remove(movieId, (errDelete) => {
+    if (errDelete) {
+      res.status(500).json(errDelete);
+    } else {
+      res.status(200).json({ success: "True" });
+    }
+  });
+});
+
 module.exports = router;
