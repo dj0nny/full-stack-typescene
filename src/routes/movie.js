@@ -32,16 +32,39 @@ router.post('/add', (req, res) => {
 router.delete('/:id', (req, res) => {
   if (!req.params.id) {
     res.status(500).json({ message: "No ID found" })
+  } else {
+    const movieId = { _id: req.params.id };
+    Movie.remove(movieId, (errDelete) => {
+      if (errDelete) {
+        res.status(500).json(errDelete);
+      } else {
+        res.status(200).json({ success: "True" });
+      }
+    });
   }
-  const movieId = { _id: req.params.id };
+});
 
-  Movie.remove(movieId, (errDelete) => {
-    if (errDelete) {
-      res.status(500).json(errDelete);
-    } else {
-      res.status(200).json({ success: "True" });
-    }
-  });
+router.put('/:id', (req, res) => {
+  if (!req.params.id) {
+    res.status(500).json({ message: "No ID found" })
+  } else {
+    const movieId = { _id: req.params.id };
+    const movie = { };
+
+    movie.title = req.body.title;
+    movie.director = req.body.director;
+    movie.releaseYear = req.body.releaseYear;
+    movie.playbillUrl = req.body.playbillUrl;
+
+    Movie.update(movieId, movie, (err) => {
+      if (err) {
+        res.status(500).json(err);
+      } else {
+        res.status(200).json(movie);
+      }
+    });
+  }
+  
 });
 
 module.exports = router;
